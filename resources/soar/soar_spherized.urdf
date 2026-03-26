@@ -8,7 +8,6 @@
     <child link="virtual_link/y"/>
     <axis xyz="1 0 0"/>
     <limit effort="50" lower="-1.0" upper="1.0" velocity="1.238"/>
-    <dynamics damping="10" friction="1"/>
   </joint>
   <link name="virtual_link/y"/>
   <joint name="virtual_joint/y" type="prismatic">
@@ -17,18 +16,16 @@
     <child link="virtual_link/theta"/>
     <axis xyz="0 1 0"/>
     <limit effort="50" lower="-1.0" upper="1.0" velocity="1.238"/>
-    <dynamics damping="10" friction="1"/>
   </joint>
   <link name="virtual_link/theta"/>
   <joint name="virtual_joint/theta" type="revolute">
-    <origin rpy="0 0 0" xyz="0 0 0.267"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="virtual_link/theta"/>
     <child link="base_footprint"/>
     <axis xyz="0 0 1"/>
     <limit effort="50" lower="-6.283185307179586" upper="6.283185307179586" velocity="4.71"/>
-    <dynamics damping="10" friction="1"/>
   </joint>
-
+  <!-- soar -->
   <link name="base_footprint"/>
   <joint name="base_joint" type="fixed">
     <parent link="base_footprint"/>
@@ -39,7 +36,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 -0.0075"/>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/soar_description/share/soar_description/meshes/visual/base.obj"/>
+        <mesh filename="file:///home/ubuntu/ros/install/soar_description/share/soar_description/meshes/visual/base.obj"/>
       </geometry>
       <material name="white">
         <color rgba="1 1 1 1"/>
@@ -50,229 +47,229 @@
       <mass value="45"/>
       <inertia ixx="1.5849009374999998" ixy="0.0" ixz="0.0" iyy="1.7007759375000002" iyz="0.0" izz="1.9908750000000002"/>
     </inertial>
-    <collision name="sphere_0">
+    <collision name="sphere_6">
       <origin xyz="0.0 0.0 0.23" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.204"/>
       </geometry>
     </collision>
-    <collision name="sphere_1">
+    <collision name="sphere_7">
       <origin xyz="0.11 0.0 0.23" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.204"/>
       </geometry>
     </collision>
-    <collision name="sphere_2">
+    <collision name="sphere_8">
       <origin xyz="-0.12 0.0 0.23" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.204"/>
       </geometry>
     </collision>
-    <collision name="sphere_3">
+    <collision name="sphere_9">
       <origin xyz="0.0 -0.066 0.23" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.204"/>
       </geometry>
     </collision>
-    <collision name="sphere_4">
+    <collision name="sphere_10">
       <origin xyz="0.0 0.066 0.23" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.204"/>
       </geometry>
     </collision>
-    <collision name="sphere_5">
+    <collision name="sphere_11">
       <origin xyz="0.1 -0.066 0.23" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.204"/>
       </geometry>
     </collision>
-    <collision name="sphere_6">
+    <collision name="sphere_12">
       <origin xyz="0.1 0.066 0.23" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.204"/>
       </geometry>
     </collision>
-    <collision name="sphere_7">
+    <collision name="sphere_13">
       <origin xyz="-0.126 -0.066 0.23" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.204"/>
       </geometry>
     </collision>
-    <collision name="sphere_8">
+    <collision name="sphere_14">
       <origin xyz="-0.126 0.066 0.23" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.204"/>
       </geometry>
     </collision>
-    <collision name="sphere_9">
+    <collision name="sphere_15">
       <origin xyz="0.0 -0.217 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_10">
+    <collision name="sphere_16">
       <origin xyz="-0.088 -0.217 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_11">
+    <collision name="sphere_17">
       <origin xyz="-0.173 -0.217 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_12">
+    <collision name="sphere_18">
       <origin xyz="0.081 -0.217 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_13">
+    <collision name="sphere_19">
       <origin xyz="0.165 -0.217 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_14">
+    <collision name="sphere_20">
       <origin xyz="0.218 -0.163 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_15">
+    <collision name="sphere_21">
       <origin xyz="0.243 -0.115 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_16">
+    <collision name="sphere_22">
       <origin xyz="0.255 -0.083 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_17">
+    <collision name="sphere_23">
       <origin xyz="0.257 -0.024 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_18">
+    <collision name="sphere_24">
       <origin xyz="0.0 0.217 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_19">
+    <collision name="sphere_25">
       <origin xyz="-0.088 0.217 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_20">
+    <collision name="sphere_26">
       <origin xyz="-0.173 0.217 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_21">
+    <collision name="sphere_27">
       <origin xyz="0.081 0.217 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_22">
+    <collision name="sphere_28">
       <origin xyz="0.165 0.217 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_23">
+    <collision name="sphere_29">
       <origin xyz="0.218 0.163 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_24">
+    <collision name="sphere_30">
       <origin xyz="0.243 0.115 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_25">
+    <collision name="sphere_31">
       <origin xyz="0.255 0.083 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_26">
+    <collision name="sphere_32">
       <origin xyz="0.257 0.024 0.375" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_27">
+    <collision name="sphere_33">
       <origin xyz="-0.132 -0.064 0.447" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.12"/>
       </geometry>
     </collision>
-    <collision name="sphere_28">
+    <collision name="sphere_34">
       <origin xyz="-0.132 -0.064 0.611" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.12"/>
       </geometry>
     </collision>
-    <collision name="sphere_29">
+    <collision name="sphere_35">
       <origin xyz="-0.132 -0.064 0.77" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.12"/>
       </geometry>
     </collision>
-    <collision name="sphere_30">
+    <collision name="sphere_36">
       <origin xyz="-0.132 0.064 0.447" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.12"/>
       </geometry>
     </collision>
-    <collision name="sphere_31">
+    <collision name="sphere_37">
       <origin xyz="-0.132 0.064 0.611" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.12"/>
       </geometry>
     </collision>
-    <collision name="sphere_32">
+    <collision name="sphere_38">
       <origin xyz="-0.132 0.064 0.77" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.12"/>
       </geometry>
     </collision>
-    <collision name="sphere_33">
+    <collision name="sphere_39">
       <origin xyz="0.18 0.0 0.42" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_34">
+    <collision name="sphere_40">
       <origin xyz="0.13 0.05 0.42" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_35">
+    <collision name="sphere_41">
       <origin xyz="0.13 -0.05 0.42" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_36">
+    <collision name="sphere_42">
       <origin xyz="-0.107 -0.217 0.45" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_37">
+    <collision name="sphere_43">
       <origin xyz="-0.107 -0.217 0.54" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
@@ -320,6 +317,12 @@
       <origin xyz="0 0 0"/>
       <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
     </inertial>
+    <collision name="sphere_0">
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.0569775"/>
+      </geometry>
+    </collision>
   </link>
   <gazebo reference="wheel_left">
     <material>
@@ -368,6 +371,12 @@
       <origin xyz="0 0 0"/>
       <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
     </inertial>
+    <collision name="sphere_1">
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.0569775"/>
+      </geometry>
+    </collision>
   </link>
   <gazebo reference="wheel_right">
     <material>
@@ -595,7 +604,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.02315 0 0"/>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/soar_description/share/soar_description/meshes/visual/power_connector.obj"/>
+        <mesh filename="file:///home/ubuntu/ros/install/soar_description/share/soar_description/meshes/visual/power_connector.obj"/>
       </geometry>
       <material name="yellow">
         <color rgba="1 1 0 1"/>
@@ -646,6 +655,18 @@
       <mass value="0.5"/>
       <inertia ixx="0.0021842916666666664" ixy="0.0" ixz="0.0" iyy="0.0021842916666666664" iyz="0.0" izz="0.00055225"/>
     </inertial>
+    <collision name="sphere_2">
+      <origin xyz="0.0 0.107 0.0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.047"/>
+      </geometry>
+    </collision>
+    <collision name="sphere_3">
+      <origin xyz="0.0 -0.107 0.0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.047"/>
+      </geometry>
+    </collision>
   </link>
   <gazebo reference="front_caster_link">
     <material>
@@ -683,6 +704,18 @@
       <mass value="0.5"/>
       <inertia ixx="0.0021842916666666664" ixy="0.0" ixz="0.0" iyy="0.0021842916666666664" iyz="0.0" izz="0.00055225"/>
     </inertial>
+    <collision name="sphere_4">
+      <origin xyz="0.0 0.107 0.0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.047"/>
+      </geometry>
+    </collision>
+    <collision name="sphere_5">
+      <origin xyz="0.0 -0.107 0.0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.047"/>
+      </geometry>
+    </collision>
   </link>
   <gazebo reference="rear_caster_link">
     <material>
@@ -721,7 +754,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/soar_description/share/soar_description/meshes/visual/torso.obj"/>
+        <mesh filename="file:///home/ubuntu/ros/install/soar_description/share/soar_description/meshes/visual/torso.obj"/>
       </geometry>
       <material name="white">
         <color rgba="1 1 1 1"/>
@@ -732,199 +765,199 @@
       <mass value="2.0"/>
       <inertia ixx="0.12447683333333336" ixy="0.0" ixz="0.0" iyy="0.12727514551483335" iyz="0.0" izz="0.04843164551483333"/>
     </inertial>
-    <collision name="sphere_38">
+    <collision name="sphere_44">
       <origin xyz="-0.074 -0.059 0.019" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.136"/>
       </geometry>
     </collision>
-    <collision name="sphere_39">
+    <collision name="sphere_45">
       <origin xyz="-0.079 0.068 0.537" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.129"/>
       </geometry>
     </collision>
-    <collision name="sphere_40">
+    <collision name="sphere_46">
       <origin xyz="-0.077 0.079 0.227" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.129"/>
       </geometry>
     </collision>
-    <collision name="sphere_41">
+    <collision name="sphere_47">
       <origin xyz="-0.082 -0.074 0.537" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.121"/>
       </geometry>
     </collision>
-    <collision name="sphere_42">
+    <collision name="sphere_48">
       <origin xyz="-0.076 0.079 0.385" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.126"/>
       </geometry>
     </collision>
-    <collision name="sphere_43">
+    <collision name="sphere_49">
       <origin xyz="-0.082 0.071 0.007" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.124"/>
       </geometry>
     </collision>
-    <collision name="sphere_44">
+    <collision name="sphere_50">
       <origin xyz="-0.072 -0.061 0.091" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.134"/>
       </geometry>
     </collision>
-    <collision name="sphere_45">
+    <collision name="sphere_51">
       <origin xyz="-0.076 -0.079 0.381" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.129"/>
       </geometry>
     </collision>
-    <collision name="sphere_46">
+    <collision name="sphere_52">
       <origin xyz="-0.076 -0.081 0.22" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.129"/>
       </geometry>
     </collision>
-    <collision name="sphere_47">
+    <collision name="sphere_53">
       <origin xyz="-0.082 0.074 0.113" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.121"/>
       </geometry>
     </collision>
-    <collision name="sphere_48">
+    <collision name="sphere_54">
       <origin xyz="0.105 -0.001 0.061" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.087"/>
       </geometry>
     </collision>
-    <collision name="sphere_49">
+    <collision name="sphere_55">
       <origin xyz="-0.014 -0.123 0.569" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_50">
+    <collision name="sphere_56">
       <origin xyz="-0.014 -0.123 0.491" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_51">
+    <collision name="sphere_57">
       <origin xyz="-0.014 -0.123 0.414" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_52">
+    <collision name="sphere_58">
       <origin xyz="-0.014 -0.123 0.331" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_53">
+    <collision name="sphere_59">
       <origin xyz="-0.014 -0.123 0.248" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_54">
+    <collision name="sphere_60">
       <origin xyz="-0.014 -0.123 0.164" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_55">
+    <collision name="sphere_61">
       <origin xyz="-0.014 -0.123 0.081" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_56">
+    <collision name="sphere_62">
       <origin xyz="-0.014 -0.123 -0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_57">
+    <collision name="sphere_63">
       <origin xyz="-0.014 -0.123 -0.074" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_58">
+    <collision name="sphere_64">
       <origin xyz="-0.014 0.123 0.569" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_59">
+    <collision name="sphere_65">
       <origin xyz="-0.014 0.123 0.491" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_60">
+    <collision name="sphere_66">
       <origin xyz="-0.014 0.123 0.414" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_61">
+    <collision name="sphere_67">
       <origin xyz="-0.014 0.123 0.331" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_62">
+    <collision name="sphere_68">
       <origin xyz="-0.014 0.123 0.248" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_63">
+    <collision name="sphere_69">
       <origin xyz="-0.014 0.123 0.164" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_64">
+    <collision name="sphere_70">
       <origin xyz="-0.014 0.123 0.081" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_65">
+    <collision name="sphere_71">
       <origin xyz="-0.014 0.123 -0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_66">
+    <collision name="sphere_72">
       <origin xyz="-0.014 0.123 -0.074" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.07"/>
       </geometry>
     </collision>
-    <collision name="sphere_67">
+    <collision name="sphere_73">
       <origin xyz="-0.073 0.0 0.648" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.121"/>
       </geometry>
     </collision>
-    <collision name="sphere_68">
+    <collision name="sphere_74">
       <origin xyz="0.09 0.0 0.008" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.09"/>
       </geometry>
     </collision>
-    <collision name="sphere_69">
+    <collision name="sphere_75">
       <origin xyz="0.09 -0.04 0.008" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.09"/>
       </geometry>
     </collision>
-    <collision name="sphere_70">
+    <collision name="sphere_76">
       <origin xyz="0.09 0.04 0.008" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.09"/>
@@ -966,7 +999,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link_base.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link_base.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_White"/>
@@ -980,30 +1013,30 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link1.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link1.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_White"/>
     </visual>
-    <collision name="sphere_71">
+    <collision name="sphere_77">
       <origin xyz="0.0 0.0 -0.057" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.06"/>
       </geometry>
     </collision>
-    <collision name="sphere_72">
+    <collision name="sphere_78">
       <origin xyz="0.0 0.0 -0.113" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.06"/>
       </geometry>
     </collision>
-    <collision name="sphere_73">
+    <collision name="sphere_79">
       <origin xyz="0.0 -0.008 -0.004" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.06"/>
       </geometry>
     </collision>
-    <collision name="sphere_74">
+    <collision name="sphere_80">
       <origin xyz="0.0 0.04 -0.004" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.06"/>
@@ -1026,42 +1059,42 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link2.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link2.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_White"/>
     </visual>
-    <collision name="sphere_75">
+    <collision name="sphere_81">
       <origin xyz="-0.0 -0.105 0.008" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.053"/>
       </geometry>
     </collision>
-    <collision name="sphere_76">
+    <collision name="sphere_82">
       <origin xyz="-0.0 -0.105 0.077" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.053"/>
       </geometry>
     </collision>
-    <collision name="sphere_77">
+    <collision name="sphere_83">
       <origin xyz="-0.0 -0.16 0.003" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.055"/>
       </geometry>
     </collision>
-    <collision name="sphere_78">
+    <collision name="sphere_84">
       <origin xyz="0.0 -0.001 0.077" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.053"/>
       </geometry>
     </collision>
-    <collision name="sphere_79">
+    <collision name="sphere_85">
       <origin xyz="0.0 -0.055 0.077" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.053"/>
       </geometry>
     </collision>
-    <collision name="sphere_80">
+    <collision name="sphere_86">
       <origin xyz="-0.0 -0.105 0.045" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.053"/>
@@ -1084,42 +1117,42 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link3.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link3.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_White"/>
     </visual>
-    <collision name="sphere_81">
+    <collision name="sphere_87">
       <origin xyz="0.051 0.013 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_82">
+    <collision name="sphere_88">
       <origin xyz="0.051 -0.034 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.06"/>
       </geometry>
     </collision>
-    <collision name="sphere_83">
+    <collision name="sphere_89">
       <origin xyz="0.051 0.038 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_84">
+    <collision name="sphere_90">
       <origin xyz="0.01 0.031 -0.019" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_85">
+    <collision name="sphere_91">
       <origin xyz="0.0 -0.0 -0.091" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.06"/>
       </geometry>
     </collision>
-    <collision name="sphere_86">
+    <collision name="sphere_92">
       <origin xyz="0.008 0.013 -0.055" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.06"/>
@@ -1142,54 +1175,54 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link4.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link4.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_White"/>
     </visual>
-    <collision name="sphere_87">
+    <collision name="sphere_93">
       <origin xyz="0.078 -0.144 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.052"/>
       </geometry>
     </collision>
-    <collision name="sphere_88">
+    <collision name="sphere_94">
       <origin xyz="0.078 -0.114 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.052"/>
       </geometry>
     </collision>
-    <collision name="sphere_89">
+    <collision name="sphere_95">
       <origin xyz="0.078 -0.08 0.072" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.052"/>
       </geometry>
     </collision>
-    <collision name="sphere_90">
+    <collision name="sphere_96">
       <origin xyz="0.078 -0.08 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.052"/>
       </geometry>
     </collision>
-    <collision name="sphere_91">
+    <collision name="sphere_97">
       <origin xyz="0.078 -0.08 0.041" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.052"/>
       </geometry>
     </collision>
-    <collision name="sphere_92">
+    <collision name="sphere_98">
       <origin xyz="0.0 -0.0 0.066" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.052"/>
       </geometry>
     </collision>
-    <collision name="sphere_93">
+    <collision name="sphere_99">
       <origin xyz="0.042 -0.045 0.072" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.052"/>
       </geometry>
     </collision>
-    <collision name="sphere_94">
+    <collision name="sphere_100">
       <origin xyz="0.017 -0.022 0.068" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.052"/>
@@ -1212,48 +1245,48 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link5.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link5.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_White"/>
     </visual>
-    <collision name="sphere_95">
+    <collision name="sphere_101">
       <origin xyz="0.0 0.061 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.04"/>
       </geometry>
     </collision>
-    <collision name="sphere_96">
+    <collision name="sphere_102">
       <origin xyz="-0.0 -0.019 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.04"/>
       </geometry>
     </collision>
-    <collision name="sphere_97">
+    <collision name="sphere_103">
       <origin xyz="0.0 0.031 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.04"/>
       </geometry>
     </collision>
-    <collision name="sphere_98">
+    <collision name="sphere_104">
       <origin xyz="-0.0 0.064 -0.045" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.04"/>
       </geometry>
     </collision>
-    <collision name="sphere_99">
+    <collision name="sphere_105">
       <origin xyz="-0.0 0.039 -0.082" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_100">
+    <collision name="sphere_106">
       <origin xyz="-0.0 0.013 -0.116" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_101">
+    <collision name="sphere_107">
       <origin xyz="-0.0 -0.0 -0.152" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
@@ -1276,42 +1309,42 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link6.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link6.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_White"/>
     </visual>
-    <collision name="sphere_102">
+    <collision name="sphere_108">
       <origin xyz="0.076 0.0 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_103">
+    <collision name="sphere_109">
       <origin xyz="0.076 0.042 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_104">
+    <collision name="sphere_110">
       <origin xyz="0.043 -0.0 0.01" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_105">
+    <collision name="sphere_111">
       <origin xyz="0.01 -0.0 0.018" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_106">
+    <collision name="sphere_112">
       <origin xyz="-0.004 -0.0 0.032" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.04"/>
       </geometry>
     </collision>
-    <collision name="sphere_107">
+    <collision name="sphere_113">
       <origin xyz="-0.004 0.0 0.01" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.04"/>
@@ -1334,18 +1367,18 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link7.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/xarm7/visual/link7.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_Silver"/>
     </visual>
-    <collision name="sphere_108">
+    <collision name="sphere_114">
       <origin xyz="0.0 0.0 0.004" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
       </geometry>
     </collision>
-    <collision name="sphere_109">
+    <collision name="sphere_115">
       <origin xyz="0.0 -0.047 0.003" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.04"/>
@@ -1473,54 +1506,54 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/gripper/xarm/base_link.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/gripper/xarm/base_link.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_White"/>
     </visual>
-    <collision name="sphere_110">
+    <collision name="sphere_116">
       <origin xyz="0.005 -0.002 0.041" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.04"/>
       </geometry>
     </collision>
-    <collision name="sphere_111">
+    <collision name="sphere_117">
       <origin xyz="-0.0 0.029 0.026" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.04"/>
       </geometry>
     </collision>
-    <collision name="sphere_112">
+    <collision name="sphere_118">
       <origin xyz="-0.0 0.03 0.067" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.04"/>
       </geometry>
     </collision>
-    <collision name="sphere_113">
+    <collision name="sphere_119">
       <origin xyz="-0.0 -0.037 0.023" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.04"/>
       </geometry>
     </collision>
-    <collision name="sphere_114">
+    <collision name="sphere_120">
       <origin xyz="-0.0 -0.033 0.067" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.04"/>
       </geometry>
     </collision>
-    <collision name="sphere_115">
+    <collision name="sphere_121">
       <origin xyz="-0.0 -0.004 0.067" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.04"/>
       </geometry>
     </collision>
-    <collision name="sphere_116">
+    <collision name="sphere_122">
       <origin xyz="0.021 -0.055 0.022" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
       </geometry>
     </collision>
-    <collision name="sphere_117">
+    <collision name="sphere_123">
       <origin xyz="0.048 -0.053 0.025" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
@@ -1535,24 +1568,24 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/gripper/xarm/left_outer_knuckle.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/gripper/xarm/left_outer_knuckle.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_Silver"/>
     </visual>
-    <collision name="sphere_131">
+    <collision name="sphere_137">
       <origin xyz="-0.0 0.044 0.022" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_132">
+    <collision name="sphere_138">
       <origin xyz="-0.0 0.039 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_133">
+    <collision name="sphere_139">
       <origin xyz="-0.0 0.035 0.016" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
@@ -1574,72 +1607,72 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/gripper/xarm/left_finger.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/gripper/xarm/left_finger.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_Silver"/>
     </visual>
-    <collision name="sphere_118">
+    <collision name="sphere_124">
       <origin xyz="-0.0 -0.005 0.005" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_119">
+    <collision name="sphere_125">
       <origin xyz="-0.0 -0.014 0.014" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_120">
+    <collision name="sphere_126">
       <origin xyz="-0.009 -0.02 0.025" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_121">
+    <collision name="sphere_127">
       <origin xyz="-0.009 -0.02 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_122">
+    <collision name="sphere_128">
       <origin xyz="-0.009 -0.02 0.047" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_123">
+    <collision name="sphere_129">
       <origin xyz="-0.0 -0.02 0.025" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_124">
+    <collision name="sphere_130">
       <origin xyz="0.009 -0.02 0.025" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_125">
+    <collision name="sphere_131">
       <origin xyz="-0.0 -0.02 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_126">
+    <collision name="sphere_132">
       <origin xyz="-0.0 -0.02 0.047" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_127">
+    <collision name="sphere_133">
       <origin xyz="0.009 -0.02 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_128">
+    <collision name="sphere_134">
       <origin xyz="0.009 -0.02 0.047" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
@@ -1662,18 +1695,18 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/gripper/xarm/left_inner_knuckle.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/gripper/xarm/left_inner_knuckle.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_Silver"/>
     </visual>
-    <collision name="sphere_129">
+    <collision name="sphere_135">
       <origin xyz="0.009 0.029 0.033" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_130">
+    <collision name="sphere_136">
       <origin xyz="-0.009 0.029 0.033" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
@@ -1696,24 +1729,24 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/gripper/xarm/right_outer_knuckle.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/gripper/xarm/right_outer_knuckle.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_Silver"/>
     </visual>
-    <collision name="sphere_159">
+    <collision name="sphere_165">
       <origin xyz="0.0 -0.044 0.022" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_160">
+    <collision name="sphere_166">
       <origin xyz="0.0 -0.039 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_161">
+    <collision name="sphere_167">
       <origin xyz="0.0 -0.036 0.016" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
@@ -1736,72 +1769,72 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/gripper/xarm/right_finger.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/gripper/xarm/right_finger.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_Silver"/>
     </visual>
-    <collision name="sphere_146">
+    <collision name="sphere_152">
       <origin xyz="-0.0 0.005 0.005" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_147">
+    <collision name="sphere_153">
       <origin xyz="-0.0 0.014 0.014" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_148">
+    <collision name="sphere_154">
       <origin xyz="-0.009 0.02 0.025" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_149">
+    <collision name="sphere_155">
       <origin xyz="-0.009 0.02 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_150">
+    <collision name="sphere_156">
       <origin xyz="-0.009 0.02 0.047" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_151">
+    <collision name="sphere_157">
       <origin xyz="-0.0 0.02 0.025" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_152">
+    <collision name="sphere_158">
       <origin xyz="0.009 0.02 0.025" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_153">
+    <collision name="sphere_159">
       <origin xyz="-0.0 0.02 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_154">
+    <collision name="sphere_160">
       <origin xyz="-0.0 0.02 0.047" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_155">
+    <collision name="sphere_161">
       <origin xyz="0.009 0.02 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_156">
+    <collision name="sphere_162">
       <origin xyz="0.009 0.02 0.047" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
@@ -1824,18 +1857,18 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/xarm_description/share/xarm_description/meshes/gripper/xarm/right_inner_knuckle.stl"/>
+        <mesh filename="file:///home/ubuntu/ros/install/xarm_description/share/xarm_description/meshes/gripper/xarm/right_inner_knuckle.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="arm_Silver"/>
     </visual>
-    <collision name="sphere_157">
+    <collision name="sphere_163">
       <origin xyz="-0.009 -0.029 0.033" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_158">
+    <collision name="sphere_164">
       <origin xyz="0.009 -0.029 0.033" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
@@ -1916,73 +1949,73 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="1.9535e-5" ixy="-1.72671e-7" ixz="7.894187e-6" iyy="2.7193400e-5" iyz="1.91246e-6" izz="7.864908e-6"/>
     </inertial>
-    <collision name="sphere_134">
+    <collision name="sphere_140">
       <origin xyz="0.0 0.003 0.002" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_135">
+    <collision name="sphere_141">
       <origin xyz="-0.01 0.003 0.002" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_136">
+    <collision name="sphere_142">
       <origin xyz="-0.02 0.003 0.002" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_137">
+    <collision name="sphere_143">
       <origin xyz="0.0 0.003 0.013" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_138">
+    <collision name="sphere_144">
       <origin xyz="-0.01 0.003 0.013" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_139">
+    <collision name="sphere_145">
       <origin xyz="-0.02 0.003 0.013" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_140">
+    <collision name="sphere_146">
       <origin xyz="0.0 0.003 0.028" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_141">
+    <collision name="sphere_147">
       <origin xyz="-0.01 0.003 0.028" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_142">
+    <collision name="sphere_148">
       <origin xyz="-0.02 0.003 0.028" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_143">
+    <collision name="sphere_149">
       <origin xyz="0.0 -0.003 0.043" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_144">
+    <collision name="sphere_150">
       <origin xyz="-0.01 -0.003 0.043" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_145">
+    <collision name="sphere_151">
       <origin xyz="-0.02 -0.003 0.043" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
@@ -2029,73 +2062,73 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <inertia ixx="1.9535e-5" ixy="-1.72671e-7" ixz="7.894187e-6" iyy="2.7193400e-5" iyz="1.91246e-6" izz="7.864908e-6"/>
     </inertial>
-    <collision name="sphere_162">
+    <collision name="sphere_168">
       <origin xyz="0.0 -0.003 0.002" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_163">
+    <collision name="sphere_169">
       <origin xyz="-0.01 -0.003 0.002" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_164">
+    <collision name="sphere_170">
       <origin xyz="-0.02 -0.003 0.002" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_165">
+    <collision name="sphere_171">
       <origin xyz="0.0 -0.003 0.013" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_166">
+    <collision name="sphere_172">
       <origin xyz="-0.01 -0.003 0.013" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_167">
+    <collision name="sphere_173">
       <origin xyz="-0.02 -0.003 0.013" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_168">
+    <collision name="sphere_174">
       <origin xyz="0.0 -0.003 0.028" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_169">
+    <collision name="sphere_175">
       <origin xyz="-0.01 -0.003 0.028" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_170">
+    <collision name="sphere_176">
       <origin xyz="-0.02 -0.003 0.028" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_171">
+    <collision name="sphere_177">
       <origin xyz="0.0 -0.003 0.043" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_172">
+    <collision name="sphere_178">
       <origin xyz="-0.01 -0.003 0.043" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
       </geometry>
     </collision>
-    <collision name="sphere_173">
+    <collision name="sphere_179">
       <origin xyz="-0.02 -0.003 0.043" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.01"/>
@@ -2123,7 +2156,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/soar_description/share/soar_description/meshes/visual/azure_kinect_hand_mount.obj"/>
+        <mesh filename="file:///home/ubuntu/ros/install/soar_description/share/soar_description/meshes/visual/azure_kinect_hand_mount.obj"/>
       </geometry>
       <material name="white">
         <color rgba="1 1 1 1"/>
@@ -2181,55 +2214,55 @@
         <color rgba="0.9 0.9 0.9 1"/>
       </material>
     </visual>
-    <collision name="sphere_174">
+    <collision name="sphere_180">
       <origin xyz="0.053 -0.04 -0.008" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
       </geometry>
     </collision>
-    <collision name="sphere_175">
+    <collision name="sphere_181">
       <origin xyz="0.053 0.0 -0.008" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
       </geometry>
     </collision>
-    <collision name="sphere_176">
+    <collision name="sphere_182">
       <origin xyz="0.053 0.04 -0.008" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
       </geometry>
     </collision>
-    <collision name="sphere_177">
+    <collision name="sphere_183">
       <origin xyz="0.0165 -0.04 -0.004" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
       </geometry>
     </collision>
-    <collision name="sphere_178">
+    <collision name="sphere_184">
       <origin xyz="0.0165 0.0 -0.004" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
       </geometry>
     </collision>
-    <collision name="sphere_179">
+    <collision name="sphere_185">
       <origin xyz="0.0165 0.04 -0.004" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
       </geometry>
     </collision>
-    <collision name="sphere_180">
+    <collision name="sphere_186">
       <origin xyz="-0.02 0.04 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
       </geometry>
     </collision>
-    <collision name="sphere_181">
+    <collision name="sphere_187">
       <origin xyz="-0.02 0.0 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
       </geometry>
     </collision>
-    <collision name="sphere_182">
+    <collision name="sphere_188">
       <origin xyz="-0.02 -0.04 0.0" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
@@ -2312,6 +2345,14 @@
           <width>640</width>
           <height>576</height>
         </image>
+        <lens>
+          <intrinsics>
+            <fx>417.03</fx>
+            <fy>452.07</fy>
+            <cx>320.0</cx>
+            <cy>288.0</cy>
+          </intrinsics>
+        </lens>
       </camera>
     </sensor>
     <sensor name="hand_camera_ir_camera" type="camera">
@@ -2327,6 +2368,14 @@
           <width>640</width>
           <height>576</height>
         </image>
+        <lens>
+          <intrinsics>
+            <fx>417.03</fx>
+            <fy>452.07</fy>
+            <cx>320.0</cx>
+            <cy>288.0</cy>
+          </intrinsics>
+        </lens>
       </camera>
     </sensor>
   </gazebo>
@@ -2344,6 +2393,14 @@
           <width>640</width>
           <height>480</height>
         </image>
+        <lens>
+          <intrinsics>
+            <fx>320.0</fx>
+            <fy>424.2</fy>
+            <cx>320.0</cx>
+            <cy>240.0</cy>
+          </intrinsics>
+        </lens>
       </camera>
     </sensor>
   </gazebo>
@@ -2369,7 +2426,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/soar_description/share/soar_description/meshes/visual/head_pan.obj"/>
+        <mesh filename="file:///home/ubuntu/ros/install/soar_description/share/soar_description/meshes/visual/head_pan.obj"/>
       </geometry>
       <material name="white">
         <color rgba="1 1 1 1"/>
@@ -2380,55 +2437,55 @@
       <mass value="1.5"/>
       <inertia ixx="0.013973000000000001" ixy="0.0" ixz="0.0" iyy="0.010465625000000001" iyz="0.0" izz="0.022413625000000003"/>
     </inertial>
-    <collision name="sphere_183">
+    <collision name="sphere_189">
       <origin xyz="0.126 -0.076 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.09"/>
       </geometry>
     </collision>
-    <collision name="sphere_184">
+    <collision name="sphere_190">
       <origin xyz="0.055 -0.076 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.09"/>
       </geometry>
     </collision>
-    <collision name="sphere_185">
+    <collision name="sphere_191">
       <origin xyz="0.126 0.076 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.09"/>
       </geometry>
     </collision>
-    <collision name="sphere_186">
+    <collision name="sphere_192">
       <origin xyz="0.055 0.076 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.09"/>
       </geometry>
     </collision>
-    <collision name="sphere_187">
+    <collision name="sphere_193">
       <origin xyz="0.096 0.0 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.09"/>
       </geometry>
     </collision>
-    <collision name="sphere_188">
+    <collision name="sphere_194">
       <origin xyz="0.188 -0.137 -0.02" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
       </geometry>
     </collision>
-    <collision name="sphere_189">
+    <collision name="sphere_195">
       <origin xyz="0.188 0.137 -0.02" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
       </geometry>
     </collision>
-    <collision name="sphere_190">
+    <collision name="sphere_196">
       <origin xyz="0.086 0.137 -0.02" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
       </geometry>
     </collision>
-    <collision name="sphere_191">
+    <collision name="sphere_197">
       <origin xyz="0.086 -0.137 -0.02" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
@@ -2467,7 +2524,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/gisen/ros/install/soar_description/share/soar_description/meshes/visual/head_tilt.obj"/>
+        <mesh filename="file:///home/ubuntu/ros/install/soar_description/share/soar_description/meshes/visual/head_tilt.obj"/>
       </geometry>
       <material name="white">
         <color rgba="1 1 1 1"/>
@@ -2478,31 +2535,31 @@
       <mass value="1.5"/>
       <inertia ixx="0.011467625" ixy="0.0" ixz="0.0" iyy="0.00714425" iyz="0.0" izz="0.011805625"/>
     </inertial>
-    <collision name="sphere_192">
+    <collision name="sphere_198">
       <origin xyz="-0.0 0.055 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.09"/>
       </geometry>
     </collision>
-    <collision name="sphere_193">
+    <collision name="sphere_199">
       <origin xyz="-0.0 -0.055 0.036" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.09"/>
       </geometry>
     </collision>
-    <collision name="sphere_194">
+    <collision name="sphere_200">
       <origin xyz="0.059 0.0 -0.02" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
       </geometry>
     </collision>
-    <collision name="sphere_195">
+    <collision name="sphere_201">
       <origin xyz="0.059 -0.104 -0.02" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
       </geometry>
     </collision>
-    <collision name="sphere_196">
+    <collision name="sphere_202">
       <origin xyz="0.059 0.104 -0.02" rpy="0 0 0"/>
       <geometry>
         <sphere radius="0.03"/>
@@ -2645,6 +2702,14 @@
           <width>640</width>
           <height>576</height>
         </image>
+        <lens>
+          <intrinsics>
+            <fx>417.03</fx>
+            <fy>452.07</fy>
+            <cx>320.0</cx>
+            <cy>288.0</cy>
+          </intrinsics>
+        </lens>
       </camera>
     </sensor>
     <sensor name="head_camera_ir_camera" type="camera">
@@ -2660,6 +2725,14 @@
           <width>640</width>
           <height>576</height>
         </image>
+        <lens>
+          <intrinsics>
+            <fx>417.03</fx>
+            <fy>452.07</fy>
+            <cx>320.0</cx>
+            <cy>288.0</cy>
+          </intrinsics>
+        </lens>
       </camera>
     </sensor>
   </gazebo>
@@ -2677,6 +2750,14 @@
           <width>640</width>
           <height>480</height>
         </image>
+        <lens>
+          <intrinsics>
+            <fx>320.0</fx>
+            <fy>424.2</fy>
+            <cx>320.0</cx>
+            <cy>240.0</cy>
+          </intrinsics>
+        </lens>
       </camera>
     </sensor>
   </gazebo>
