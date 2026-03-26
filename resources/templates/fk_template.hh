@@ -1,5 +1,6 @@
 #pragma once
 
+#include <string_view>
 #include <vamp/vector.hh>
 #include <vamp/vector/math.hh>
 #include <vamp/collision/environment.hh>
@@ -10,7 +11,7 @@ namespace vamp::robots
 {
 struct {{name}}
 {
-    static constexpr char* name = "{{lower(name)}}";
+    static constexpr std::string_view name = "{{lower(name)}}";
     static constexpr std::size_t dimension = {{n_q}};
     static constexpr std::size_t n_spheres = {{n_spheres}};
     static constexpr float min_radius = {{min_radius}};
@@ -18,7 +19,7 @@ struct {{name}}
     static constexpr std::size_t resolution = {{resolution}};
 
     static constexpr std::array<std::string_view, dimension> joint_names = {"{{join(joint_names, "\", \"")}}"};
-    static constexpr char* end_effector = "{{end_effector}}";
+    static constexpr std::string_view end_effector = "{{end_effector}}";
 
     using Configuration = FloatVector<dimension>;
     using ConfigurationArray = std::array<FloatT, dimension>;
